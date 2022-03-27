@@ -1,0 +1,237 @@
+body {
+    color: #40514E !important;
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif !important;
+  }
+
+  h1 {
+    color: #66BFBF;
+    font-size: 3.625rem !important;
+    margin: 0 auto -15px auto;
+    font-family: 'Sacramento', cursive;
+  }
+
+  h2 {
+    display: inline-block;
+    color: #66BFBF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-top: 2%;
+    padding-bottom: 11px;
+  }
+
+  p {
+    line-height: 2;
+  }
+
+
+/* navbar */
+  
+a{
+  color: #66BFBF !important;
+}
+
+a:hover{
+  color: #6a98c4 !important;
+}
+
+/* other content in header */
+.header-section{
+    background-color:#E4F9F5;
+    width: 100vw;
+  }
+  
+.header-section div {  
+    text-align: center;
+  }
+  
+  .intro-1{
+  padding-top: 7%;
+}
+
+.mountain-img{
+  width: 50%;
+}
+
+.cloud_1{
+  position: absolute;
+  right: 17%;
+  top: 20%;
+}
+.cloud_2{
+  position: absolute;
+  left: 17%;
+  bottom: 47%;
+}
+
+
+/* styles of middle-container */
+
+.middle-section{
+  margin : 10px 20%
+}
+
+.middle-section img{
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+
+.intro{
+  margin-top: -10px;
+}
+
+
+/* skill section */
+
+.skill-container{
+  display: flex;
+  flex-direction: row;
+  margin : 30px 20%;
+  align-items: center;
+}
+
+.skills-img{
+  width: 30%;
+  height: 20%;
+  margin: 1%;
+}
+
+.react-skills-img, .python-skills-img{
+  width: 20%;
+  height: 15%;
+  margin: 1%;
+}
+
+.linux-skills-img{
+  width: 15%;
+  height: 18%;
+}
+
+
+/* last-section */
+
+
+.last-section{
+    background-color:#E4F9F5;
+}
+
+
+/* button-sytles */
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #a4dafc);
+  background-image: -moz-linear-gradient(top, #3498db, #a4dafc);
+  background-image: -ms-linear-gradient(top, #3498db, #a4dafc);
+  background-image: -o-linear-gradient(top, #3498db, #a4dafc);
+  background-image: linear-gradient(to bottom, #3498db, #a4dafc);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 1px 1px 3px #5b36d6;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin: 3%;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+
+@media  (max-width: 700px) {
+  body{
+    width: 100vw;
+  }
+
+  
+  .middle-section{
+    margin : 10px 4%;
+  }
+  .skill-container{
+    margin : 40px 4%;
+  }
+}
+
+@media  (max-width: 500px) {
+  body{
+    width: 100vw;
+  }
+  
+  .header-section{
+    height: 100vh;
+  }
+
+  .cloud_1{
+    right: 3%;
+    top: 22%;
+  }
+  .cloud_2{
+    left: 3%;
+    bottom: 39%;
+  }
+  
+  
+  .mountain-img{
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+  
+  .intro-1{
+    position: absolute;
+    bottom: 48%;
+    left: 22%;
+    padding-bottom: 3px;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
+
+
+
+  .middle-section{
+    margin : 10px 4%;
+  }
+  .skill-container{
+    flex-direction: column;
+    margin : 40px 4%;
+  }
+
+  .skills-titles {
+    line-height: 3;
+    margin-top: 5%;
+  }
+
+  .frontEnd-title{
+    order: 1;
+  }
+
+  .react-title{
+    order: 1;
+  }
+  .linux-title{
+    order: 1;
+  }
+}
+
+@media (max-width:925px) and (min-width:500px) {
+  .cloud_1{
+    display: none;}
+  .cloud_2{
+    display: none;
+  }
+}
